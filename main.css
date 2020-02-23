@@ -1,0 +1,130 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.main-container {
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+    padding-top: 10%;
+    
+}
+
+ .mealsListArea {
+    position: absolute;
+    top:30px;
+    left: 30px;
+    width: 15%;
+    background-color: rgb(224, 224, 224);
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+
+button {
+    border: 0;
+    background-color: rgb(146, 216, 212);
+    /* padding: 2px 2px; */
+    /* font-family: 'Open Sans Condensed', sans-serif; */
+}
+
+ul {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 5px;
+}
+
+li {
+    border-bottom: 2px dotted rgb(146, 216, 212);
+    /* font-family: 'Open Sans Condensed', sans-serif; */
+    font-size: 20px;
+}
+
+#mealsList {
+    display: none;
+}
+
+.editButton {
+    margin-bottom: 15px;
+    
+}
+
+.editButton button {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.showMealsButton button {
+    padding: 5px 10px;
+    /* border-radius: 5px; */
+    background-color: rgb(224, 224, 224);
+    /* border-bottom: 2px solid rgb(146, 216, 212); */
+
+}
+
+.input-text {
+    width: 60%;
+}
+
+.edit {
+    display: none;
+}
+
+.edit button {
+    width: auto;
+
+}
+
+.delete-button {
+    float: right;
+    border: 0;
+    padding: 6px 6px;
+
+}
+
+.add-meals {
+    background-color: coral;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.add-meals button {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+ .result {
+    width: 60%;
+    margin-left: 20%;
+    background-color: coral;
+    padding: 25px 0px;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+ .randomButton {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.randomButton button {
+    padding: 10px 20px;
+    background-color: rgb(146, 216, 212);
+}
+
+
+
+.main-container .button {
+    /* font-family: 'Open Sans Condensed', sans-serif; */
+}
+
+
+
+
+#demo .button {
+    visibility: hidden;
+}

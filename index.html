@@ -6,11 +6,79 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FoodChooser</title>
     <link rel="stylesheet" href="main.css" >
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h3 id="demo"></h3>
 
-    <button onclick="chooseMeal()">hello</button>
+    <div class="main-container">
+
+
+        <!-- display array meals -->
+        <div class="mealsListArea">
+
+        <!-- button to toggle show/hide meals -->
+
+        <div class="showMealsButton" >
+            <button class="showMealsButton"  onclick="showMealList()">show meals</button>
+        </div>
+
+        <!-- display area of array items -->
+        <div id="mealsList">
+           
+            <!-- paragraph that innerHTML is written to on toggling display of array -->
+            <ul id="listOfMeals"></ul>
+
+            <!-- button to toggle display edit options - add/remove meals from array -->
+            <div class="editButton">
+                <button onclick="addCheckbox()">edit</button>
+            </div>
+
+            <div class="edit">
+
+                <!-- add button - add to array -->
+
+
+                <div class="add-meals ">
+                    <input type = "text" class="input-text" id = "addItem"   placeholder="Add a meal"/>
+                    <button onclick="addWord()" class="submit " >Add Meal</button>
+                    
+                    <div id="error"></div>
+                
+                </div>
+
+                <!-- delete item button -->
+                <!-- <div class="delete-button ">
+                    <button onclick="deleteItem()" class="delete-meal">Delete</button>
+
+                </div> -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+        <!-- button that randomly displays an item from the array -->
+        <div class="randomButton">
+            <button  class =" button" role="button" onclick="chooseMeal()" >randomise meals</button> 
+        </div>
+
+        <!-- area that the random result is displayed -->
+        <div class="result">
+            <h3 id="demo">your next meal will be...</h3>
+        </div>
+
+       
+       
+        
+        
+
+        
+
+    </div>
+    
     <script src="main.js" ></script>
 </body>
 </html>
