@@ -1,15 +1,25 @@
 html, body {
     margin: 0;
     height: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(152, 206, 201);
+    font-family: sans-serif;
+    color: #333;
+    
+}
+.title h3 {
     font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 55px;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    color: #333;
+    text-shadow: 0px 0px 5px white;
 }
 
 .main-container {
     text-align: center;
     width: 60%;
     margin-left: 20%;
-    padding-top: 10%;
+    padding-top: 50px;
     
 }
 
@@ -18,113 +28,133 @@ html, body {
     top:30px;
     left: 30px;
     width: 15%;
-    background-color: rgb(224, 224, 224);
-    padding: 5px 5px;
-    border-radius: 10px;
+    
+    
+
 }
 
-button {
+#mealsList {
+    background-color: rgb(207, 206, 206);
+    border-radius: 10px;
+}
+.showMealsButtonDiv {
+    padding: 5px 0px;
+    text-align: left;
+}
+
+.showMealsButton {
     border: 0;
-    background-color: rgb(146, 216, 212);
-    /* padding: 2px 2px; */
-    /* font-family: 'Open Sans Condensed', sans-serif; */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: rgba(255,255,255,.4);
+    box-shadow: 0px 0px 5px rgb(100, 100, 100);
 }
 
 ul {
     list-style-type: none;
     text-align: left;
-    padding-left: 5px;
+    padding-inline-start: 0;
+    padding: 15px 15px 10px 15px;
+    margin: 0;
 }
 
 li {
-    border-bottom: 2px dotted rgb(146, 216, 212);
-    /* font-family: 'Open Sans Condensed', sans-serif; */
-    font-size: 20px;
+    color: #333;
+    background-color: rgba(255,255,255,.5);
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    list-style: none;
+
+}
+li .delete-button {
+    float: right;
+    border: 0;
+    border-radius: 50%;
+    background-color: rgb(250, 142, 103);
+    color: white;
+    padding: 3px 6px;
+
 }
 
-#mealsList {
-    display: none;
+.add-meals-area {
+    text-align: center;
+    background-color: rgb(250, 142, 103);
+    border-radius: 0px 0px 5px 5px;
+    /* display: inline; */
 }
 
-.editButton {
-    margin-bottom: 15px;
+.add-meals-area .inputText {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #FFF;
+    border-radius: 5px 0px 0px 5px;
+    width: 180px;
+    /* display: inline; */
+}
+
+.add-meals-area .submit {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0px;
+    background-color: rgb(95, 139, 160);
+    color: #FFF;
+    border: 2px solid rgb(95, 139, 160);
+    border-radius: 0px 5px 5px 0px;
+    display: inline;
+}
+
+img {
+    width: 600px;
+    margin: 20px;
+}
+
+.randomButton {
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 16px;
     
 }
 
-.editButton button {
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-.showMealsButton button {
-    padding: 5px 10px;
-    /* border-radius: 5px; */
-    background-color: rgb(224, 224, 224);
-    /* border-bottom: 2px solid rgb(146, 216, 212); */
-
-}
-
-.input-text {
-    width: 60%;
-}
-
-.edit {
-    display: none;
-}
-
-.edit button {
-    width: auto;
-
-}
-
-.delete-button {
-    float: right;
+.randomButton button {
+    padding: 20px 30px;
+    background-color: rgb(250, 152, 117);
+    color: #333;
     border: 0;
-    padding: 6px 6px;
-
+    border-radius: 50px;
+    font-size: 30px;
+    box-shadow: 0px 0px 5px rgb(100, 100, 100);
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
 }
-
-.add-meals {
-    background-color: coral;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.add-meals button {
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
 
  .result {
-    width: 60%;
-    margin-left: 20%;
-    background-color: coral;
-    padding: 25px 0px;
-    font-size: 35px;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 5px;
+    font-size: 45px;
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
+    
 }
 
- .randomButton {
-    margin-bottom: 35px;
-    text-align: center;
-}
-
-.randomButton button {
-    padding: 10px 20px;
-    background-color: rgb(146, 216, 212);
-}
-
-
-
-.main-container .button {
-    /* font-family: 'Open Sans Condensed', sans-serif; */
+.result h3 {
+    color: #333;
+    background-color: rgba(255,255,255,.4);
+    margin-block-start: 0;
+    margin-block-end: 0;
+    border-radius: 5px;
+   
 }
 
 
 
 
-#demo .button {
+
+
+
+/* #demo .button {
     visibility: hidden;
-}
+} */
