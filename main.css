@@ -9,9 +9,6 @@ html, body {
     overflow-x: hidden; 
 }
 
-/* body {
-    margin: 0;
-} */
 
 /* title */
 
@@ -44,6 +41,7 @@ html, body {
     position: absolute;
     top:30px;
     left: 30px;
+    right: auto;
     width: 280px;
     
     
@@ -111,7 +109,6 @@ li .delete-button {
     text-align: center;
     background-color: rgb(250, 142, 103);
     border-radius: 0px 0px 5px 5px;
-    /* display: inline; */
 }
 
 .add-meals-area .inputText {
@@ -120,7 +117,6 @@ li .delete-button {
     border: 2px solid #FFF;
     border-radius: 5px 0px 0px 5px;
     width: 180px;
-    /* display: inline; */
 }
 
 /* submit new options button */
@@ -301,7 +297,32 @@ img {
 }
 
 @media only screen and (max-width: 360px) {
+    
+    .mealsListArea {
+        position: absolute;
+        top:10px;
+        left: auto;
+        right: auto;
+        width: 90%;
+        margin-left: 5%;
+        
+    
+    }
 
+    .showMealsButtonDiv {
+        padding: 5px 0px;
+        text-align: center;
+        width: 100%;
+
+    }
+    
+    /* Edit/ Hide Options Button */
+    
+    .showMealsButton {
+        width: 100%;
+    }
+
+    
     .main-container {
         width: 100%;
         margin-left: 0%;
